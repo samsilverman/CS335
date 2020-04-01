@@ -26,7 +26,7 @@ The level of threshold levels defined by the Occupational Health and Safety Admi
 - mini metal speaker
 - 4 RGB tri-color LEDs
 - 2 tactile switch buttons
-- 1 k$\Omega$ resistor
+- 1 kΩ resistor
 - TIP102 NPN transistor
 
 ## Future Work
