@@ -1,10 +1,8 @@
 # SmartSmoke: Air Quality Regulator
 
-SmartSmoke is my final project for the course COMPSCI 335: Inside the Box - How Computers Work.
+![SmartSmoke](Misc/Images/splashscreen.png)
 
-## Description
-
-SmartSmoke measures air quality and alerts users when hazerdous conditions arise. SmartSmoke measures total volatile organic compound (TVOC) concentration in the air and converts measurements to equivalent carbon-dioxide (eCO2) concentration. 
+SmartSmoke measures air quality and alerts users when hazerdous conditions arise. SmartSmoke measures total volatile organic compound (TVOC) concentration in the air and converts measurements to equivalent carbon-dioxide (eCO2) concentration.
 
 Using known levels of CO2 concentration from the Occupational Health and Safety Administration, SmartSmoke is able to determine if observed level of eCO2 concentration is dangerous and alerts users with sounds and seirens.
 
@@ -19,20 +17,30 @@ The level of threshold levels defined by the Occupational Health and Safety Admi
 | 5,000                   | This indicates unusual air conditions where high levels of other gases also could be present. Toxicity or oxygen deprivation could occur. This is the permissible exposure limit for daily workplace exposures. |
 | 40,000                  | This level is immediately harmful due to oxygen deprivation.                                                                                                                                                    |
 
-## Equipment
+### Built With
 
-- mbed LPC1768 microcontroller
-- Adafruit SGP30 air quality sensor breakout - VOC and eCO2
-- mini metal speaker
-- 4 RGB tri-color LEDs
-- 2 tactile switch buttons
-- 1 kΩ resistor
-- TIP102 NPN transistor
+* [mbed LPC1768 microcontroller](https://os.mbed.com/platforms/mbed-LPC1768/)
+* [Adafruit SGP30](https://www.adafruit.com/product/3709)
+* [Mini metal speaker w/ wires](https://www.adafruit.com/product/1890)
+* [RGB (tri-color) LEDs](https://www.adafruit.com/product/159)
+* [Tacticle switch buttons](https://www.adafruit.com/product/1119)
+* [1.0K Ω resistor](https://www.adafruit.com/product/4294)
+* [TIP102 NPN transistor](https://www.digikey.com/en/products/detail/stmicroelectronics/TIP102/603571?utm_adgroup=Semiconductor%20Modules&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search&utm_term=&utm_content=Semiconductor%20Modules&gclid=CjwKCAiAz4b_BRBbEiwA5XlVVvpGPsQLU-971aE3wE49qtFxe6vS6fcqUOPuNvjGoWT3VzXdsRmrmhoCYbgQAvD_BwE)
 
 ## Future Work
 
 Unfortunately, due to the time constraints of the project I was unable to implement internet connectivity to the LPC1768. Ideally, I wanted SmartSmoke to send users email updates when harmful levels of CO2 were detected. Email support would further increase the "smartness" of SmartSmoke to allow for better management of large numbers of SmartSmokes and easier air quality control.
 
-## What I Learned
+## Contact
 
-I learned the basics of working with pulse width modulation as this was how I operated the speaker and warning lights. Additionally, I got to play around with various duty cycles/periods to get to a desired siren noise. Finally, I worked with the I2C serial protocol as this was how the SGP30 communicates with the LPC1768.
+Sam Silverman - [@sam_silverman](https://twitter.com/sam_silverman) - [samuel.silverman@columbia.edu](mailto:samuel.silverman@columbia.edu)
+
+Project Link: [https://github.com/samsilverman/SmartSmoke](https://github.com/samsilverman/SmartSmoke)
+
+## Acknowledgements
+
+* [Adafruit SGP30 Software](https://learn.adafruit.com/adafruit-sgp30-gas-tvoc-eco2-mox-sensor/)
+* [PinDetect](https://os.mbed.com/users/AjK/code/PinDetect/)
+* [Best README Template](https://github.com/othneildrew/Best-README-Template)
+
+SmartSmoke was a final project for the course [COMPSCI 335: Inside the Box: How Computers Work](https://www.cics.umass.edu/content/fall-19-course-descriptions) taught by Prof. Charles Weems.
